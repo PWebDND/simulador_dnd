@@ -1,4 +1,4 @@
-# Projeto: Simulação de D&D com ChatGPT
+# Projeto: AI RPG
 
 ## Integrantes:
 - [João Victor de Faria](https://www.linkedin.com/in/joaovictordefaria/)
@@ -13,7 +13,7 @@
 
 ## Descrição
 
-O projeto **D&D com ChatGPT** tem como objetivo criar uma experiência interativa de **Dungeons & Dragons** (D&D), onde o usuário começa uma história e a IA, treinada com campanhas de D&D, gera uma narrativa colaborativa. O jogador pode escrever o início de sua jornada, e com base na entrada, a API do ChatGPT, configurada para responder como uma aventura, cria uma história com 10 turnos de interação. No final, a IA gera uma conclusão para a história.
+O projeto **AI RPG** tem como objetivo criar uma experiência interativa de **RPG** (Role-playing Game), onde o usuário começa uma história e a IA, treinada com campanhas de D&D, gera uma narrativa colaborativa. O jogador pode escrever o início de sua jornada, e com base na entrada, a API do ChatGPT, configurada para responder como uma aventura, cria uma história com 10 turnos de interação. No final, a IA gera uma conclusão para a história.
 
 ### Funcionalidades Principais
 1. **Bloco de Texto Interativo**  
@@ -29,7 +29,7 @@ O projeto **D&D com ChatGPT** tem como objetivo criar uma experiência interativ
    A IA é treinada com campanhas de D&D para gerar respostas realistas e envolventes.
 
 ### Objetivo do Projeto
-O objetivo é criar uma ferramenta divertida e envolvente para os fãs de **Dungeons & Dragons**, permitindo que a IA gere campanhas de D&D personalizadas com base nas escolhas do jogador, simulando uma aventura narrativa interativa.
+O objetivo é criar uma ferramenta divertida e envolvente para os fãs de **RPG**, permitindo que a IA gere campanhas personalizadas com base nas escolhas do jogador, simulando uma aventura narrativa interativa.
 
 ---
 
