@@ -23,7 +23,7 @@ O projeto **AI RPG** tem como objetivo criar uma experiência interativa de **RP
    Uma API do ChatGPT é acionada para gerar a continuação da história com base na entrada do jogador. Cada interação é limitada a 10 turnos, e ao final, a IA fornece uma conclusão.
 
 3. **Saída de Texto Dinâmica**  
-   O resultado da interação entre o jogador e a IA é exibido em uma caixa de saída de texto, criando uma experiência imersiva de D&D.
+   O resultado da interação entre o jogador e a IA é exibido em uma caixa de saída de texto, criando uma experiência imersiva de RPG.
 
 4. **História Personalizada**  
    A IA é treinada com campanhas de D&D para gerar respostas realistas e envolventes.
