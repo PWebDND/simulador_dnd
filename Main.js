@@ -1,6 +1,6 @@
 async function fetchAIResponse() {
   try {
-    const response = await fetch("/.netlify/functions/openai", {
+    const response = await fetch("/netlify/functions/openai", {
       method: "POST",
     });
 
