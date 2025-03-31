@@ -50,20 +50,11 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 ```plaintext
 -Raiz
 |
-|-->public
-|    |-->index.html
-|    |-->style.css
-|-->src
-|    |-->backend
-|    |   |-->index.js
-|    |-->frontend
-|    |   |-->app.js
-|    |   |-->style.css
-|-->node_modules
-|-->package.json
-|-->package-lock.json
-|-->readme.md
-|-->.gitignore
+|-->index.html
+|-->style.css
+|-->main.js
+|-->test.json
+|-->README.md
 ```
 
 ## 🛠 Instalação
@@ -85,6 +76,35 @@ npm start
 
 A aplicação estará disponível em http://localhost:3000.
 
+---
+
+## 🔧 Divisão de Tarefas  
+
+---
+
+### 🎨 Interface & Estilização (`style.css`, HTML)  
+
+📌 **João**  
+- Criou a estilização da página principal (`index.html`).  
+- Definiu a paleta de cores e fontes do jogo para manter um visual imersivo.  
+
+---
+
+### 💻 Programação & Lógica (`main.js`, `test.json`)  
 
 
+📌 **Marcos**  
+- Foi responsável por treinar a IA com campanhas de D&D em `test.json`, moldando as respostas da mesma com base numa experiência de role-play.  
+- Criou o sistema de turnos para manter a fluidez do jogo e evitar repetitividade.
+
+📌 **Ambos - Colaboração em `main.js`**  
+- Programamos a lógica principal do jogo, garantindo que as escolhas do jogador fossem corretamente interpretadas pela IA.   
+
+---
+
+### 🔍 Testes & Ajustes Finais  
+
+📌 **Marcos** e 📌 **João**  
+- Ajustamos o layout para garantir uma experiência visual confortável.  
+- Refinamos as respostas da IA, garantindo que o jogador tenha chances reais de vencer com base na sua escolha.
 
