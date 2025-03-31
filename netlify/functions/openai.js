@@ -59,6 +59,7 @@ export async function handler(event) {
                     content: userInput,
                 },
             ],
+            export completion;
         });
 
         // Prepare the output
