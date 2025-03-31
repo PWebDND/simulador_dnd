@@ -14,7 +14,8 @@ async function fetchAIResponse() {
                 userInput, 
                 context, 
                 turns, 
-                totalTurns
+                totalTurns,
+                output
             }),
         });
 
