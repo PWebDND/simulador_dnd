@@ -4,6 +4,7 @@ let Turns = 0;
 let userInput = "";
 let atitude = "";
 let Total_Turns = 5;
+const API = process.env.API;
 const client = new OpenAI({apiKey : API, dangerouslyAllowBrowser: true  });
 async function NewInput() {
     
