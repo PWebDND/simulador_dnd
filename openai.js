@@ -1,4 +1,4 @@
-import { Configuration, OpenAIApi } from "./node_modules/openai/index.ts";
+import { Configuration, OpenAIApi } from "/openai";
 
 const configuration = new Configuration({
     apiKey: process.env.API_KEY
