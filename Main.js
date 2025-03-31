@@ -4,7 +4,7 @@ let Turns = 0;
 let userInput = "";
 let atitude = "";
 let Total_Turns = 5;
-const client = new OpenAI({apiKey : "_REMOVE-THIS-AND-USE-API-KEY_", dangerouslyAllowBrowser: true  });
+const client = new OpenAI({apiKey : API, dangerouslyAllowBrowser: true  });
 async function NewInput() {
     
     if (Turns >= 5) {
