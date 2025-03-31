@@ -1,4 +1,4 @@
-import OpenAI from "./netlify/functions/openai";
+import OpenAI from "./openai";
 let Context = "";
 let Turns = 0;
 let userInput = "";
