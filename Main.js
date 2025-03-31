@@ -4,7 +4,7 @@ let Turns = 0;
 let userInput = "";
 let atitude = "";
 let Total_Turns = 5;
-const client = new OpenAI({apiKey : "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", dangerouslyAllowBrowser: true  });
+const client = new OpenAI({apiKey : "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 _REMOVE-THIS-AND-SPACE_", dangerouslyAllowBrowser: true  });
 async function NewInput() {
     
     if (Turns >= 5) {
