@@ -1,7 +1,7 @@
 import { Configuration, OpenAIApi } from "openai";
 
 // Get the API key from environment variables
-const API_KEY = process.env.OPENAI_API_KEY;
+const API_KEY = process.env.API_KEY;
 
 // Initialize OpenAI API
 const openai = new Configuration({
