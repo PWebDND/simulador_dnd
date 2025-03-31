@@ -4,10 +4,10 @@ import { Configuration, OpenAIApi } from "openai";
 const API_KEY = process.env.OPENAI_API_KEY;
 
 // Initialize OpenAI API
-const configuration = new Configuration({
+const openai = new Configuration({
     apiKey: API_KEY
 });
-const openai = new OpenAIApi(configuration);
+
 
 // Function to handle the request
 export async function handler(event) {
