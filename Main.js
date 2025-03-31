@@ -14,13 +14,12 @@ async function fetchAIResponse() {
                 userInput, 
                 context, 
                 turns, 
-                totalTurns,
-                output
+                totalTurns
             }),
         });
 
-
-
+        const output = completion.choices[0].message.content;
+        
 
         // Update the output UI
         document.getElementById("Output").value += "Você: " + userInput + "\n" + "\n" + "Narrador: " + output + "\n" + "\n";
