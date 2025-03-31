@@ -1,4 +1,4 @@
-import { Configuration, OpenAIApi } from "/openai";
+import { Configuration, OpenAIApi } from ".netlify/functions/openai";
 
 const configuration = new Configuration({
     apiKey: process.env.API_KEY
