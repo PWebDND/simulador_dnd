@@ -2,7 +2,7 @@ async function fetchAIResponse() {
     try {
         const userInput = document.getElementById("Input").value; // Get user input
         const context = document.getElementById("Output").value; // Get current context
-        const turns = parseInt(document.getElementById("TurnsLeft").innerText.split(" ")[3], 10); // Get current turn count
+        let turn = 0); 
         const totalTurns = 5; // Set total turns
         
         const response = await fetch("/.netlify/functions/openai", {
@@ -16,11 +16,12 @@ async function fetchAIResponse() {
                 turns, 
                 totalTurns
             }),
+            turn += 1
         });
         const output = response;
         // Update the output UI
         document.getElementById("Output").value += "Você: " + userInput + "\n" + "\n" + "Narrador: " + output + "\n" + "\n";
-        document.getElementById("TurnsLeft").innerText = `You have ${totalTurns - updatedTurns} Turns Left`;
+        document.getElementById("TurnsLeft").innerText = `You have ${totalTurns - turn} Turns Left`;
     } catch (error) {
         console.error("Error calling Netlify function:", error);
     }
