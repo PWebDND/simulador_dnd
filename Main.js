@@ -1,4 +1,4 @@
-import OpenAI from "./openai";
+import OpenAI from "./node_modules/openai/index";
 let Context = "";
 let Turns = 0;
 let userInput = "";
