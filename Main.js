@@ -4,6 +4,8 @@ let Turns = 0;
 let userInput = "";
 let Total_Turns = 10;
 const client = new OpenAI({apiKey : "OpenAIKey", dangerouslyAllowBrowser: true  });
+
+
 async function NewInput() {
     
     if (Turns >= 10) {
@@ -60,6 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault(); 
         NewInput();
         console.log("You have " + (Total_Turns - Turns)  + " Turns Left");
-        document.getElementById("TurnsLeft").innerText = "You have " + (Total_Turns - Turns) + " Turns Left";
+        document.getElementById("TurnsLeft").innerText = "Você tem " + (Total_Turns - Turns) + " turnos restantes.";
     });
 });
