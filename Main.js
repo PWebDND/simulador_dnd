@@ -1,4 +1,4 @@
-import OpenAI from "./openai";
+import OpenAI from "./openai.js";
 let Context = "";
 let Turns = 0;
 let userInput = "";
@@ -21,7 +21,7 @@ async function NewInput() {
     else {
         userInput = document.getElementById("Input").value;
     }
-    const completion = await client.chat.completions.create({
+    const completion = await OpenAI.chat.completions.create({
         model: "ft:gpt-4o-mini-2024-07-18:masters-mercy-mm:adreeu:BEb4ivBd",
         messages: [
             { 
