@@ -18,10 +18,6 @@ async function fetchAIResponse() {
             }),
         });
 
-        if (!response.ok) {
-            const errorText = await response.text();
-            throw new Error(`HTTP error! Status: ${response.status}, Message: ${errorText}`);
-        }
 
         const data = await response.json();
         const { output, context: updatedContext, turns: updatedTurns } = data;
