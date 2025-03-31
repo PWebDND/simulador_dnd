@@ -1,4 +1,4 @@
-let turners = 0; 
+let turners = new int(0); 
 
 async function fetchAIResponse() {
     try {
@@ -18,7 +18,7 @@ async function fetchAIResponse() {
                 turns, 
                 totalTurns
             }),
-            turners += 1;
+            turners = turners + 1;
         });
         const output = response;
         // Update the output UI
