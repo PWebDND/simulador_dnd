@@ -1,8 +1,10 @@
+let turn = 0; 
+
 async function fetchAIResponse() {
     try {
         const userInput = document.getElementById("Input").value; // Get user input
         const context = document.getElementById("Output").value; // Get current context
-        let turn = 0; 
+        
         const totalTurns = 5; // Set total turns
         
         const response = await fetch("/.netlify/functions/openai", {
