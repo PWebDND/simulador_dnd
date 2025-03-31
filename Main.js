@@ -18,7 +18,7 @@ async function fetchAIResponse() {
             }),
         });
 
-                const output = completion.choices[0].message.content;
+                const output = await fetch ("/.netlify/functions/openai",{completion.choices[0].message.content};
         
 
         // Update the output UI
