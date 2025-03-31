@@ -1,4 +1,4 @@
-let turn = 0; 
+let turners = 0; 
 
 async function fetchAIResponse() {
     try {
@@ -18,12 +18,12 @@ async function fetchAIResponse() {
                 turns, 
                 totalTurns
             }),
-            turn += 1;
+            turners += 1;
         });
         const output = response;
         // Update the output UI
         document.getElementById("Output").value += "Você: " + userInput + "\n" + "\n" + "Narrador: " + output + "\n" + "\n";
-        document.getElementById("TurnsLeft").innerText = `You have ${totalTurns - turn} Turns Left`;
+        document.getElementById("TurnsLeft").innerText = `You have ${totalTurns - turners} Turns Left`;
     } catch (error) {
         console.error("Error calling Netlify function:", error);
     }
