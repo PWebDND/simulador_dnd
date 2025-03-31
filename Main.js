@@ -4,7 +4,7 @@ async function fetchAIResponse() {
         const context = document.getElementById("Output").value; // Get current context
         const turns = parseInt(document.getElementById("TurnsLeft").innerText.split(" ")[3], 10); // Get current turn count
         const totalTurns = 5; // Set total turns
-
+        
         const response = await fetch("/.netlify/functions/openai", {
             method: "POST",
             headers: {
@@ -18,7 +18,7 @@ async function fetchAIResponse() {
             }),
         });
 
-        const output = completion.choices[0].message.content;
+                const output = completion.choices[0].message.content;
         
 
         // Update the output UI
