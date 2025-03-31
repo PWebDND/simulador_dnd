@@ -18,7 +18,7 @@ async function fetchAIResponse() {
                 turns, 
                 totalTurns
             }),
-            turn += 1
+            turn += 1;
         });
         const output = response;
         // Update the output UI
