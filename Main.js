@@ -18,9 +18,14 @@ async function fetchAIResponse() {
             }),
         });
 
-                const output = await fetch ("/.netlify/functions/openai",{completion.choices[0].message.content};
+        const output = await fetch("/.netlify/functions/openai", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ completion: choices[0].message.content })
+        });
         
-
         // Update the output UI
         document.getElementById("Output").value += "Você: " + userInput + "\n" + "\n" + "Narrador: " + output + "\n" + "\n";
         document.getElementById("TurnsLeft").innerText = `You have ${totalTurns - updatedTurns} Turns Left`;
