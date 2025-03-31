@@ -23,7 +23,7 @@ async function fetchAIResponse() {
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({ completion: choices[0].message.content })
+            body: JSON.stringify({ completion.choices[0].message.content })
         });
         
         // Update the output UI
