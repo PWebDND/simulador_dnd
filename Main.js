@@ -1,5 +1,3 @@
-let turners = new int(0); 
-
 async function fetchAIResponse() {
     try {
         const userInput = document.getElementById("Input").value; // Get user input
