@@ -93,4 +93,6 @@ body {
     transition: 0.3s ease;
 }
 
-
+.titulo h1{
+    font-weight: 300;
+}
