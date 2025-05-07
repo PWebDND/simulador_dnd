@@ -4,13 +4,15 @@ import { Configuration, OpenAIApi } from "openai";
 const API_KEY = process.env.API_KEY;
 
 // Initialize OpenAI API
-const openai = new Configuration({
+const config = new Configuration({
     apiKey: API_KEY
 });
 
+const openai = new OpenAIApi(config);
+
 
 // Function to handle the request
-export async function handler(event) {
+export async function handler(event, context) {
     // Only handle POST requests
     if (event.httpMethod !== "POST") {
         return {
@@ -43,7 +45,7 @@ export async function handler(event) {
 
     // Prepare OpenAI request data
     try {
-        const completion = await openai.chat.completions.create({
+        const completion = await openai.createChatCompletion({
             model: "ft:gpt-4o-mini-2024-07-18:masters-mercy-mm:adreeu:BEb4ivBd",
             messages: [
                 { 
@@ -59,11 +61,10 @@ export async function handler(event) {
                     content: userInput,
                 },
             ],
-            export completion;
         });
 
         // Prepare the output
-        const output = completion.choices[0].message.content;
+        const output = completion.data.choices[0].message.content;
         context += output; // Update context
         turns += 1; // Increment turns
         
