@@ -10,6 +10,7 @@
   "dependencies": {
     "express": "^5.1.0",
     "openai": "^4.88.0",
+    "openai-cli": "^0.0.1",
     "vite": "^6.2.3"
   },
   "devDependencies": {

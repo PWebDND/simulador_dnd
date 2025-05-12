@@ -10,7 +10,7 @@ const app = express();
 const port = 3000;
 
 const openai = new OpenAI({
-    apiKey: "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", // Substitua com sua chave de API OpenAI
+    apiKey: "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", // Substitua com sua chave de API OpenAI
 });
 
 const __filename = fileURLToPath(import.meta.url);
@@ -28,7 +28,7 @@ app.post("/openai", async (req, res) => {
             : "The history UNDER NO CIRCUMSTANCES can END, VICTORY and DEFEAT ARE IMPOSSIBLE, ALL RESPONSES MUST INCLUDE SOMETHING THAT LEADS TO ANOTHER USER INPUT.";
 
         const completion = await openai.chat.completions.create({
-            model: "ft:gpt-4o-mini-2024-07-18:mee:narrator:BWBrA9yZ", // Substitua pelo seu modelo OpenAI
+            model: "ft:gpt-4o-mini-2024-07-18:mee::BWNW57FP", // Substitua pelo seu modelo OpenAI
             messages: [
                 { role: "system", content: attitude },
                 { role: "user", content: userInput },
