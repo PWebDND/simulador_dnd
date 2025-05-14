@@ -8,8 +8,9 @@
     "start": "vite preview"
   },
   "dependencies": {
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
-    "openai": "^4.88.0",
+    "openai": "^4.98.0",
     "openai-cli": "^0.0.1",
     "vite": "^6.2.3"
   },

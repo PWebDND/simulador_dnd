@@ -30,11 +30,28 @@ body {
     border-radius: 8px;
     padding: 10px;
     margin-top: 20px;
-    margin-bottom: 20;
+    margin-bottom: 20px;
     cursor: pointer;
     text-align: center;
     line-height: 20px;
 }
+
+#tentarNovamente {
+    width: 80%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+}
+
 #TurnsLeft {
     width: 80%;
     height: 40px;

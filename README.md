@@ -51,6 +51,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 -Raiz
 |
 |-->index.html
+|-->server.js
 |-->style.css
 |-->main.js
 |-->test.json
@@ -67,11 +68,19 @@ Para instalar as dependências do projeto, execute o seguinte comando:
 npm install
 ```
 
-### 2. **Executar o Servidor**
+### 2. **Configuração do ambiente**
+
+Para configurar o ambiente, crie um arquivo .env na pasta raiz do projeto.
+
+```bash
+OPENAI_API_KEY="sua-chave-openai"
+```
+
+### 3. **Executar o Servidor**
 
 Para iniciar o servidor, execute o seguinte comando:
 ```bash
-npm start
+node server.js
 ```
 
 A aplicação estará disponível em http://localhost:3000.

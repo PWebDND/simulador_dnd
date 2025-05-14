@@ -1,6 +1,16 @@
 let turners = 0;
 const totalTurns = 5;
 
+function tentar() {
+    turners = 0; // Resetar os turnos
+    document.getElementById("Output").value = ""; 
+    document.getElementById("Input").value = ""; 
+    document.getElementById("TurnsLeft").innerText = `Você tem ${totalTurns} turnos restantes.`;
+    document.getElementById("Input").disabled = false;
+    document.getElementById("forn").style.display = "block";
+    document.getElementById("tentarNovamente").style.display = "none";
+}
+
 async function fetchAIResponse() {
     try {
         const userInput = document.getElementById("Input").value;
@@ -32,13 +42,22 @@ async function fetchAIResponse() {
             "Você: " + userInput + "\n\n" + 
             "Narrador: " + output + "\n\n";
 
-        document.getElementById("TurnsLeft").innerText = 
-            `You have ${totalTurns - ++turners} Turns Left`;
+        turners++;
 
-        document.getElementById("Input").value = ""; // Clear input
+        document.getElementById("TurnsLeft").innerText = 
+            `Você tem ${totalTurns - turners} turno(s) restante(s).`;
+
+        document.getElementById("Input").value = ""; 
+
+        if (data.finished) {
+            document.getElementById("TurnsLeft").innerText = "A história chegou ao fim.";
+            document.getElementById("Input").disabled = true;
+            document.getElementById("forn").style.display = "none";
+            document.getElementById("tentarNovamente").style.display = "block";
+        }
 
     } catch (error) {
-        console.error("Error calling Netlify function:", error);
+        console.error("Erro ao chamar a API:", error);
         alert("Houve um erro ao tentar continuar a história.");
     }
 }
@@ -49,3 +68,5 @@ document.addEventListener("DOMContentLoaded", () => {
         fetchAIResponse();
     });
 });
+
+window.tentar = tentar;
